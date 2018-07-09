@@ -19,4 +19,3 @@
     command: ' alternatives --install "/usr/bin/java" "java" "{{java_name}}/bin/java" 2000 '
   - name: clear up
     file: state=absent path={{java_archive}}
-------------------------====================-==-=============
