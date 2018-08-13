@@ -1,0 +1,15 @@
+---
+- hosts: vagrant
+  remote_user: vagrant
+  become: yes
+  become_method: sudo
+  
+  tasks:
+  - name: install httpd
+    yum:
+     name: httpd
+     state: installed
+
+
+
+
